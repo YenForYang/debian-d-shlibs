@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set +e
+
+apt-get install libncurses5-dev
+cd debian/pbuilder-test/01_ncurses.d
+d-shlibmove /usr/lib/libncurses.so
+case $? in
+  2)
+	exit 0
+	;;
+  *)
+	exit 1
+	;;
+esac

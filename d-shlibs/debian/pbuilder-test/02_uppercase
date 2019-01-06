@@ -1,0 +1,16 @@
+#!/bin/bash
+
+set +e
+
+cd debian/pbuilder-test/02_uppercase.d/
+gcc -shared -Wl,--soname="libUppercase.so.1" -o /tmp/libUppercase.so.1.0.0
+ln -s libUppercase.so.1.0.0 /tmp/libUppercase.so
+d-shlibmove /tmp/libUppercase.so
+case $? in
+  2)
+	exit 0
+	;;
+  *)
+	exit 1
+	;;
+esac

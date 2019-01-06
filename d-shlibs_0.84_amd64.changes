@@ -1,0 +1,29 @@
+Format: 1.8
+Date: Sat, 05 Jan 2019 13:28:22 +0100
+Source: d-shlibs
+Binary: d-shlibs
+Built-For-Profiles: nobiarch nocheck nodoc
+Architecture: all
+Version: 0.84
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: Jonas Smedegaard <dr@jones.dk>
+Changed-By: Andreas Tille <tille@debian.org>
+Description:
+ d-shlibs   - Debian shared library package building helper scripts
+Closes: 918251
+Changes:
+ d-shlibs (0.84) UNRELEASED; urgency=medium
+ .
+   * Team upload.
+   * Add quirk for libsvm3-dev
+     Closes: #918251
+Checksums-Sha1:
+ b004709533eccc261872273d6c217dd59aadf0ab 15036 d-shlibs_0.84_all.deb
+ b31ff28a017c5f4a94ec8bc9555e69c220c30af7 5204 d-shlibs_0.84_amd64.buildinfo
+Checksums-Sha256:
+ 37aea6354dd49834c051f31864b7ab7cb96d80fc2820d2571af20c88cbdae54f 15036 d-shlibs_0.84_all.deb
+ e8aa7eb4c478a80841dbc5f0929635dd042013fff59f0b7a2e9f5a5c7350dba4 5204 d-shlibs_0.84_amd64.buildinfo
+Files:
+ 665ed5f6e454d1629b63456e37df571f 15036 utils optional d-shlibs_0.84_all.deb
+ 4eacfb23af0b86bcb632a16d2eb10eac 5204 utils optional d-shlibs_0.84_amd64.buildinfo
